@@ -1,0 +1,59 @@
+*
+{
+   padding: 0;
+   margin: 0; 
+}
+:root{
+    --bs--price:rgba(30,30,30,0.5);
+    --bs-pricesize: 18px;
+    --bs-priceheading: 18px;
+}
+
+.bscardcontainer{
+    background: transparent;
+    height: 370px;
+    width: 250px;
+}
+
+
+.bscardimgbox{
+    height: 300px;
+    width: 250px;
+    transition: all .3s ease 0s;
+}
+.bscardimgbox:hover{
+    transform: scale(1.1);
+    
+}
+.bscardimgbox:hover .bscardimg{
+    transform: scale(1.1);
+    
+}
+
+.bscardimg{
+    border-radius: 15px;
+    height: 300px;
+    width: 250px;
+    transition: all .3s ease 0s;
+}
+
+.bscardprice{
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.bscardprice h5{
+    color: black;
+    font-weight: 500;
+    font-size: var(--bs-priceheading);
+    margin-bottom: 5px;
+}
+
+.bscardprice p{
+    font-size: var(--bs-pricesize);
+    color: var(--bs--price);
+}
+
+.bscardprice p::before {
+    padding-right: 5px;
+    content: "\20B9";
+  }

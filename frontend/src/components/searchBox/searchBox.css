@@ -1,0 +1,107 @@
+.searchBox
+{
+    background-color: #F3F2C8;
+}
+.searchBoxLeft
+{
+    display: grid;
+    grid-gap: 1rem;
+    background-color: #FE5C46;
+    margin: auto 2.875rem;
+    padding: 2.875rem;
+    grid-template-columns: 0.6fr;
+    grid-template-rows: 0.4fr 0.75fr 0.75fr;
+    border-radius: 1rem;
+    align-items: center;
+}
+.searchBoxHeading
+{
+    color:#F3F2C8;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.searchBoxPara
+{
+    color:#F3F2C8;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.numbers
+{
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: #1E1E1E;
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+    font-weight: 500;
+}
+.numbers p
+{
+    padding-right: 1rem;
+}
+.box
+{
+    padding-top: 2rem;
+}
+
+.searchBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #F3F2C8;
+    border-radius: 1rem;
+    /* width: 400px; */
+    width: 100%;
+    height: auto;
+}
+
+.searchBar-input{
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1E1E1E;
+    background-color: #F3F2C8;
+    outline: none;
+}
+
+.searchBar-submit{
+    background-color: #FE5C46;
+    border: none;
+    border-radius: 1rem;
+    color: #F3F2C8;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+
+
+
+@media(max-width: 800px){
+    .searchBoxLeft{
+        margin: 0px 10px;
+        padding: 40px 20px;
+    }
+
+    .searchBoxHeading{
+        font-size: 36px;
+    }
+
+    .numbers p{
+        font-size: 27px;
+    }
+    .searchBar{
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .searchBox{
+        margin-top: 90px;
+    }
+}

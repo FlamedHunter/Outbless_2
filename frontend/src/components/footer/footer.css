@@ -1,0 +1,139 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --footer--theme2: #F3F2C8;
+    --footer--theme: #FE5C46;
+    --footer--fontcolor: black;
+    --footer--grey: rgba(30,30,30,0.5);
+    --footer-text: 18px;
+    --footer-heading: 20px;
+}
+
+.footercontainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+    background-color: var(--footer--theme);
+    padding: 50px 100px 120px 100px;
+}
+
+
+.footerleft{
+    color: var(--footer--grey);
+}
+.footerleft h4{
+    font-weight: 500;
+    color: var(--footer--grey);
+    font-size: var(--footer-text);
+}
+
+.footersocialcontainer{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.footersocialiconbox{
+    display: flex;
+    align-items: center;
+    color: black;
+    justify-content: center;
+    border: 1px solid var(--footer--fontcolor);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-right: 28px;
+    transition: all .4s ease 0s;
+}
+.footersocialiconbox:hover{
+    background-color: var(--footer--theme2);
+}
+
+
+
+
+.footerright{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footerrightlist{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.footerrightlist h3{
+    font-size: var(--footer-heading);
+    font-weight: 750;
+}
+
+.footerrightlist ul{
+    list-style: none;
+}
+
+.footerrightlist li{
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: var(--footer-text);
+}
+
+.footerrightlist a{
+    font-weight: 400;
+    font-size: var(--footer-text);
+    color: var(--footer--grey);
+    text-decoration: none;
+    transition: all .3s ease 0s;
+}
+
+.footerright a:hover{
+    color: var(--footer--theme2);
+}
+
+
+/* for width max 1100px (phone) */
+@media(max-width: 1100px){
+    .footercontainer{
+        padding: 50px 10px 50px 10px;
+    }
+    
+    .footerleft{
+        padding-left: 20px;
+    }
+
+    .footersocialcontainer{
+        margin-top: 30px;
+    }
+
+    .footerrightlist{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* for width max 800px (phone) */
+@media(max-width: 768px){
+    .footercontainer{
+        padding: 50px 10px 50px 10px;
+    }
+    
+    .footerleft{
+        padding-left: 20px;
+    }
+
+    .footersocialcontainer{
+        margin-top: 10px;
+    }
+
+    .footerrightlist{
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+

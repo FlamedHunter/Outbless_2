@@ -1,0 +1,44 @@
+:root{
+    --aboutus--theme: #F3F2C8 ;
+    --aboutus-heading: 32px;
+    --aboutus-para: 18px;
+    --aboutus-grey: rgba(30,30,30,0.5);
+}
+
+.aboutuscontainer{
+    display: grid;
+    justify-items: center;
+    padding: 50px;
+    background-color: #f2cfe2;
+}
+
+.aboutusheadingscontainer{
+    text-align: center;
+}
+
+.aboutusheadingscontainer h2{
+    padding-bottom: 15px;
+    font-size: var(--aboutus-heading);
+}
+
+.aboutusheadingscontainer p{
+    color: var(--aboutus-grey);
+    font-size: var(--aboutus-para);
+}
+
+.aboutusboxes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+/* for 768px */
+@media(max-width: 768px){
+    .aboutuscontainer{
+        padding: 40px 20px;
+    }
+}

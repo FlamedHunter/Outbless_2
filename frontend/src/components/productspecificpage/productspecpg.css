@@ -1,0 +1,242 @@
+:root{
+    --productspecific--theme1: #F3F2C8;
+    --productspecific--theme2: #FE5C46;
+    --productspecific--grey: rgba(30,30,30,0.5);
+    --productspecific-para: 12px;
+    --productspecific-heading: 46px;
+    --productspecific-price: 18px;
+}
+
+.productspecificcontainer{
+    background-color: var(--productspecific--theme1);
+    padding: 3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.productspecificimgbox{
+    flex-basis: 60%;
+    display: flex;
+    object-fit: cover;
+}
+
+.prductspecificimg{
+    height: auto;
+    width: 100%;
+}
+
+.productspecificdiscrp{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    padding-left: 30px;
+    /* flex-basis: 35%; */
+}
+
+.productspecificdiscrp > p{
+    font-weight: 500;
+    margin: 1.2rem 0;
+    font-size: 30px;
+}
+
+.productspecificdiscrp > p:last-child{
+    margin: 0;
+    font-size: 18px;
+
+}
+
+.productspecificdiscrpspan1{
+    font-size: var(--productspecific-para);
+    text-transform: uppercase;
+    color: var(--productspecific--grey);
+    font-weight: 600;
+}
+
+.productspecificdiscrph1{
+    margin: 10px 0px;
+    font-size: var(--productspecific-heading);
+    font-weight: 500;
+}
+
+
+.productspecificprice{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+
+.productspecificprice h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--productspecific-price);
+    font-weight: 500;
+}
+
+.productspecificoldprice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: var(--productspecific--grey);
+    padding-right: 5px;
+    margin-right: 10px;
+}
+.productspecificoldprice::after{
+    position: absolute;
+    content: "";
+    height: 1.5px;
+    width: 100%;
+    background-color: black;
+    top: 42%;
+}
+.productspecificoldprice h5{
+    font-size: 16px;
+}
+
+.saleshow{
+    margin-left: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 30px;
+    background-color: var(--productspecific--theme2);
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+
+.productspecificquantitybox{
+
+}
+
+.productspecificquantitybox h3{
+    font-size: 15px;
+    color: rgba(30,30,30,0.7);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.productspecificbuttonscontainer{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 250px;
+}
+
+.productspecificcartbutton{
+    margin: 10px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: transparent;
+    border: 1px solid black;
+    position: relative;
+    height: 40px;
+    width: 190px;
+}
+.productspecificcartbutton button{
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: var(--productspecific--theme2);
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+.productspecificquantitychange{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: transparent;
+    border: 1px solid black;
+    position: relative;
+    height: 40px;
+    width: 170px;
+}
+.productspecificquantitychange button{
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.productspecificquantitychange > input{
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* media query for maxwidth 1100 px */
+@media screen and (max-width: 1000px){
+    .productspecificcontainer{
+        flex-direction: column;
+        padding: 2rem;
+        align-items: center;
+    }
+    .productspecificimgbox{
+        flex-basis: 100%;
+    }
+    .productspecificdiscrp{
+        flex-basis: 100%;
+        padding-left: 0px;
+    }
+    .productspecificdiscrp > p{
+        font-size: 25px;
+    }
+    .productspecificdiscrp > p:last-child{
+        font-size: 15px;
+    }
+    .productspecificdiscrpspan1{
+        font-size: 10px;
+    }
+    .productspecificdiscrph1{
+        font-size: 30px;
+    }
+    .productspecificprice{
+        margin-bottom: 10px;
+    }
+    .productspecificprice h5{
+        font-size: 15px;
+    }
+    .productspecificoldprice h5{
+        font-size: 12px;
+    }
+    .productspecificquantitybox h3{
+        font-size: 12px;
+    }
+    .productspecificcartbutton{
+        margin: 10px 0px;
+        width: 100%;
+    }
+    .productspecificcartbutton button{
+        font-size: 12px;
+    }
+    .productspecificquantitychange{
+        margin: 10px 0px;
+        width: 100%;
+    }
+    .productspecificquantitychange button{
+        font-size: 20px;
+    }
+    .productspecificquantitychange > input{
+        width: 30px;
+        font-size: 15px;
+    }
+}
